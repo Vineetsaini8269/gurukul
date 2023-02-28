@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website development</title>
+    <link rel="stylesheet" size="text/stylesheet" href="style.css">
+    <link rel="script" size="text/script" href="script.js">
+    <link rel="stylesheet" href="foter.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+   <div class="main">
+      <div class="navbar">
+           <div class="icon">
+              <h2 class="logo"> Gurukul</h2>
+           </div>
+               
+               <div class="menu">
+                  <ul>
+                      <li><a href="blog.html">VLOG</a></li>
+                      <li><a href="services.html">SERVICE</a></li>
+                      <li><a href="footer.html">CONTACT</a></li>
+                      <li><a href="abut.html">ABOUT</a></li>
+                      <li><a href="https://www.linkedin.com/in/vineet-saini-820b72225">CONTACT</a></li>
+                  </ul>
+               </div>
+
+                 <div class="Search">
+                       <input class="srch" type="search" name="" palceholder="type to text">
+                       <a href="#" ><button class ="btn">Search</button></a>
+                 </div> 
+                 
+                 <div class="content">
+                    <p>__________________________________________________________________________________________________________________________</p><br>
+                    <br>
+                     <h3>What is DAta</h3><br>
+                     
+                     <p>
+                        Data is a collection of a distinct small unit of information. It can be used in a variety of forms like text, numbers, media, bytes, etc. it can be stored in pieces of paper or electronic memory, etc.<br>
+                        
+                        Word 'Data' is originated from the word 'datum' that means 'single piece of information.' It is plural of the word datum.<br>
+                        
+                        Data can be defined as a representation of facts, concepts or instructions in a formalized manner which should be suitable for communication, interpretation, or processing by human or electronic machine.<br>
+                         Data is represented with the help of characters like alphabets (A-Z,a-z), digits (0-9) or special characters(+,-,/,*, <,>, = etc.).
+                         <b>Types of Data: </b>Text, Numbers & Multimedia. <br> 
+                       </p>
+                       <br>
+                       <h3>what is information</h3>
+                       <br>
+                       
+                       <p>
+                        Information is organized or classified data which has some meaningful values for the receiver. Information is the processed data on which decisions and actions are based.<br>
+                        For the decision to be meaningful, the processed data must qualify for the following characteristics:<br>
+                        •	<b>Timely</b> - Information should be available when required.<br>
+                        •	<b>Accuracy </b>- Information should be accurate.<br>
+                        •	<b>Completeness</b> - Information should be complete<br>
+                       </p>
+                       <br>
+                       <h3>File System</h3><br>
+                       
+                       <P>
+                        Before DBMS invented, information was stored in file processing system. A file processing system is a collection of files and programs that access/modify these files. Typically, new files and programs are added over time (by different programmers) as new information needs to be stored and new ways to access information are needed.<br>
+                         <br>
+
+                        <i>"File System is a collection of Data any management with the file system user has to write the procedure."</i><br>
+                        <br>
+                       </P>
+                      
+                       <P>
+                           <h4>Problems with file processing systems:</h4>
+                           <br>
+
+                           Most explicit and major disadvantages of file system when compared to database management system are as follows:
+                           <br>
+                           <br>
+    
+                           <b>Data Redundancy</b>: The files are formed in the file system as and when required by an enterprise over its progress path. So, in that case the repetition of information about an entity cannot be avoided.E.g. The addresses of customers will be present in the file keeping information about customers holding savings account and also the address of the customers will be present in file maintaining the current account. Even when same customers have a saving account and current account his address will be present at two places.<br>
+                           <br>
+                           <b>Data Inconsistency</b>: Data redundancy leads to bigger problem than just wasting the storage i.e. it may lead to inconsistent data. Same data which has been frequented at several places may not match after it has been updated at some places.
+                           For example: Suppose the customer requests to change the address for his account in the Bank and the Program is executed to update the saving bank account file only but his current bank account file is not updated. Afterwards the addresses of the same customer present in saving bank account file and current bank account file will not match.<br>
+                             <br>
+                           <b>Difficulty in Accessing Data</b>: For producing ad hoc reports the programs will not already be present and only options present will to write a new program to generate requested report or to work manually. This is going to take impractical time and will be more expensive.<br>
+                           
+                           For example: Suppose all of sudden the administrator gets a request to generate a list of all the customers holding the saving banks account who lives in particular locality of the city. Administrator will not have any program already written to generate that list but say he has a program which can generate a list of all the customers holding the savings account. Then he can either provide the information by going thru the list manually to select the customers living in the particular locality or he can write a new program to generate the new list. Both of these ways will take large time which would generally be impractical.<br>
+                            <br>
+                           <b>Data Isolation</b>: Since the data files are formed at different times and supposedly by different person, the structures of different files generally will not match. The data will be scattered in different files for a particular entity. So, it will be difficult to get appropriate data.<br>
+                           For example: Suppose the Address in Saving Account file have fields: Add line1, add line2, City, State, Pin while the fields in address of Current account are: House No., Street No., Locality, City, State, and Pin. Administrator is asked to provide the list of customers living in a particular locality. Providing consolidated list of all the customers will require looking in both files. But they both have different way of storing the address.<br>
+                           <br>
+                           <b>Integrity Problems</b>: All the consistency constraints have to be applied to database through appropriate drafts in the coded programs. This is very difficult when number such constraint is very large.<br>
+                           For example: An account should not have balance less than Rs. 500. To enforce this constraint appropriate check should be added in the program which add a record and the program which withdraw from an account. Suppose later on this amount limit is increased then all those checks should be updated to avoid inconsistency. These time to time changes in the programs will be great headache for the administrator.<br>
+                            <br>
+                           <b>Security and access control</b>: Database should be protected from unauthorized users.Every user should not be allowed to access every data. Since application programs are added to the system. For example: The Payroll Personnel in a bank should not be allowed to access accounts information of the customers.<br>
+                             <br>
+                           <b>Concurrency Problems</b>: When more than one user is permitted to process the database.If in that environment two or more users try to update a shared data element at about the same time then it may result into inconsistent data. For example, Suppose Balance of an account is Rs. 500. And User A and B try to withdraw Rs. 100 and Rs. 50 respectively at almost the same time using the Update process.
+                           <br>
+                           <br>
+                             Update:
+                                    <br>
+                                   1.	Read the balance amount.<br>
+                                   2.	Subtract the withdrawn amount from balance.<br>
+                                   3.	Write updated Balance value.<br>
+                                     <br>
+                           Suppose A performs Step 1 and 2 on the balance amount i.e. it reads 500 and subtracts 100 from it. But at the same time B withdraws Rs 50 and he performs the Update process and he also reads the balance as 500 subtract 50 and writes back 450. User A will also write his updated Balance amount as 400. They may update the Balance value in any order depending on various reasons concerning to system being used by both of the users. So finally, the balance will be either equal to 400 or 450. Both of these values are wrong for the updated balance and so now the balance amount is having inconsistent value forever.<br>
+                       </P>
+                       <br>
+                       <P>
+                        <h3>
+                            <b>Advantages of Database Systems</b>
+                        </h3><br>
+                        
+                            • Data Independence: Application programs should not, if possible, be showing to details of  
+                            data representation and storage, The DBMS provides an abstract view of the data that hides such details.<br>
+                             <br>
+                            • Efficient Data Access: A DBMS utilizes a variety of sophisticated techniques to store and retrieve data efficiently. This feature is especially important if the data is stored on external storage devices.<br>
+                             <br>
+                            •	Data Integrity and Security: If data is always retrieved through the DBMS, the DBMS can implement integrity constraints. For example, before inserting salary information for an employee, the DBMS can check that the department budget is not exceeded. Also, it can enforce access controls that govern what data is visible to different classes of users.<br>
+                             <br>
+                            •	Data Administration: When several users share the data, centralizing the administration of data can offer significant improvements. Experienced professionals, who understand the nature of the data being managed, and how different groups of users use it, can be responsible for organizing the data representation to minimize redundancy and for fine-tuning the storage of the data to make retrieval efficient.<br>
+                             <br>
+                            •	Concurrent Access and Crash Recovery: A DBMS schedules simultaneous accesses to the data in such a manner that users can think of the data as being accessed by only one user at a time. Further, the DBMS protects users from the effects of system failures.<br>
+                            <br>
+                            •	Reduced Application Development Time: Clearly, the DBMS supports important functions that are common to many applications accessing data in the DBMS. This, in conjunction with the high-level interface to the data, facilitates quick application development. DBMS applications are also likely to be more robust than similar stand-alone applications because many important tasks are handled by the DBMS (and do not have to be debugged and tested in the application).<br>
+
+                            
+                       </P>
+                       <br>
+                       <h3>What is Database</h3><br>
+                       
+                       <p> 
+                        A database is an organized collection of data, so that it can be easily accessed and managed.<br>
+                        You can organize data into tables, rows, columns, and index it to make it easier to find relevant information.<br>
+
+                        Database handlers create a database in such a way that only one set of software program provides access of data to all the users.<br>
+                        
+                        The main purpose of the database is to operate a large amount of information by storing, retrieving, and managing data.<br>
+                        
+                        There are many dynamic websites on the World Wide Web nowadays which are handled through databases. For example, a model that checks the availability of rooms in a hotel. It is an example of a dynamic website that uses a database.<br>
+                        
+                        There are many databases available like MySQL, Sybase, Oracle, MongoDB, Informix, PostgreSQL, SQL Server, etc.<br>
+                        
+                        Modern databases are managed by the database management system (DBMS).</p>
+                        <br>
+                        <h3 class="head">Database Management System</h3>
+                       
+                        <br>
+                        <p>
+                            Database management System is a program that enable user to create or maintain a Database.
+                            <br>
+                            Database Management System is a software that allows to the computer to provide the Database function like insertion,deletion,addition,updation,or Data modifing.<br>
+                          
+                        </p>
+                        <br>
+                        <p>
+                            <h3><b>CHARACTERISTICS OF DATABASE APPROACH</b></h3><br>
+                            
+                            A number of characteristics distinguish the database method from the much older approach of programming with files. In traditional file processing, each user defines and implements the files needed for a precise software application as part of programming the application.<br>
+                            For example, one user, the grade reporting office, may keep files on students and their grades. Programs to print a student’s transcript and to enter new grades are implemented as part of the application.<br>
+                            <br>
+                            A second user, the accounting office, may keep track of students’ fees and their payments. Although both users are interested in data about students, each user maintains separate files—and programs to manipulate these files—because each requires some data not available from the other user’s files. This redundancy in defining and storing data results in wasted storage space and in redundant efforts to maintain common up-to- date data. In the database approach, a single repository maintains data that is defined once and then accessed by various users. In file systems, each application is free to name data elements independently. In contrast, in a database, the names or labels of data are defined once, and used repeatedly by queries, transactions, and applications.
+                           
+                            The main characteristics of the database approach versus the file-processing approach are the following:<br>
+                            <br>
+                               •	Self-describing nature of a database system<br>
+                               •	Insulation between programs and data, and data abstraction<br>
+                               •	Support of multiple views of the data<br>
+                               •	Sharing of data and multiuser transaction processing.<br>
+                        
+                        </p>
+
+                        <br>
+                        <p>
+                            <h3><b>DATA MODEL</b></h3><br>
+                            
+                            A data model is a collection of concepts that can be used to describe the structure of a database—provides the essential means to achieve the abstraction. By structure of a database we mean the data types, relationships,and constraints that apply to the data. Most data models also contain a set of basic operations for specifying retrievals and updates on the database.
+                            In addition to the basic operations provided by the data model, it is becoming more common to include concepts in the data model to specify the dynamic aspect or behavior of a database application. This allows the database designer to specify a set of valid user-defined operations that are allowed on the database objects.
+                            Data models define how the logical structure of a database is modeled. Data Models are fundamental entities to introduce abstraction in a DBMS. Data models define how data is connected to each other and how they are processed and stored inside the system.
+                            
+                        </p>
+                        <img src=https://cdn.educba.com/academy/wp-content/uploads/2021/04/DBMS-Models.png>
+
+                   
+                        
+                      
+                      <footer class="footer">
+                          <div class ="footer_left">
+                              <img src="logo.png" alt="">
+                              <h1  text-align= "center"><b>Content</b></h1>
+                              <br>
+                              <br>
+
+                              <p>A Contact Us page is essential to building a brand’s website as it allows visitors to contact you easily without leaving their browser.</p><br>
+                  
+                              <div class ="socials">
+                                  <a href="#"><i class="fa fa-facebook"></i></a>
+                                  <a href="#"><i class="fa fa-instagram"></i></a>
+                                  <a href="#"><i class="fa fa-dribbble"></i></a>
+                                  <a href="#"><i class="fa fa-youtube"></i></a>
+                                  <a href="#"><i class="fa fa-tumblr"></i></a>
+                  
+                              </div>
+                  
+                               </div>
+                               <ul class="footer-right">
+                                  <li>
+                                      <h2>PRODUCT</h2>
+                  
+                                      <ul class="box">
+                                     
+                                          <li><a href="#">Theme design</a></li>
+                                          <li><a href="#">plugin design</a></li>
+                                          <li><a href="#">Wordpress</a></li>
+                                          <li><a href="#">Joomla Template</a></li>
+                                          <li><a href="#">HTML Template</a></li>
+                                      </ul>
+                                  </li>
+                                     <li class="features">
+                                      <h2>USEFULL LINKS</h2>
+                  
+                                      <ul class="box">
+                                          <li><a href="#">Blog</a></li>
+                                          <li><a href="#">Pricing</a></li>
+                                          <li><a href="#">sales</a></li>
+                                          <li><a href="#">Tickets</a></li>
+                                          <li><a href="#">Certifications</a></li>
+                                      </ul>
+                                     </li>
+                                     
+                                     <li>
+                                       <h2>ADDRESS</h2><ul class="box">
+                                          <li><a href="#">Pathariya jat </a></li>
+                                          <li><a href="#">University road</a></li>
+                                          <li><a href="#">Sagar</a></li>
+                                          <li><a href="#">Madhya pradesh</a></li>
+                                          <li><a href="#">India</a></li>
+                                      </ul>
+                  
+                                     </li>
+                                  </ul>
+                  
+                                  <div class="footer-bottom">
+                                      <p>all right reserved by &copy;gurukul 2020</p>
+                  
+                                  </div>
+                      </footer>
+
+
+
+
+               
+
+
+
+
+
+
+
+               </div>
+       </div>
+    </div>     
+
+   
+    
+</body>
+</html>
